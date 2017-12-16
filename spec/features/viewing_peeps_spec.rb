@@ -1,6 +1,6 @@
 feature "Viewing Peeps" do
   scenario "User can see existing peeps on the peeps page" do
-    Peep.create(:content, 'This is a peep')
+    Peep.create(content: "This is a peep")
 
     visit '/peeps'
 
