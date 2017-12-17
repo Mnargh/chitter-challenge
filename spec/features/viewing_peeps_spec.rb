@@ -9,4 +9,15 @@ feature "Viewing Peeps" do
       expect(page).to have_content('This is a peep')
     end
   end
+
+  scenario "User can see existing peeps in chronological order" do
+    post_peep1
+    post_peep2
+
+    visit '/peeps'
+
+    within 'ol#peeps' do
+      ("Be careful not to choke on your aspirations").should appear_before("Take a seat, young Skywalker")
+    end
+  end
 end

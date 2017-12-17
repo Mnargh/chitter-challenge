@@ -17,5 +17,6 @@ group :test do
   gem 'selenium-webdriver'
   gem 'shotgun'
   gem 'database_cleaner'
+  gem 'orderly'
 
 end
