@@ -1,11 +1,12 @@
 <html>
+<h1> Welcome to the mememiverse!</h1>
 
 <ol id='peeps'>
   <!-- <%@peeps.each_with_index do |peep, index|%>
     <%=index+1%>: <%=peep.content%>
   <%end%> -->
   <%@peeps.each do |peep|%>
-    Content:<%=peep.content%>
+  <%=peep.content%>
   <%end%>
 </ol>
 
