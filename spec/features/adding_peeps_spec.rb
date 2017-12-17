@@ -5,7 +5,7 @@ feature 'Posting new peeps' do
     fill_in :content, with: 'You underestimate my power!'
     click_on 'Post Peep'
 
-    within 'ol#peeps' do
+    within 'ul#peeps' do
       expect(page).to have_content('You underestimate my power!')
     end
   end

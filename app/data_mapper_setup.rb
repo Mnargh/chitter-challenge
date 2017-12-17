@@ -1,6 +1,8 @@
-require 'dm-migrations'
 require 'data_mapper'
+require 'dm-migrations'
 require 'dm-postgres-adapter'
+
+
 
 require_relative './models/peep'
 

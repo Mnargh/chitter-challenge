@@ -5,7 +5,7 @@ feature "Viewing Peeps" do
     visit '/peeps'
 
     expect(page.status_code).to eq 200
-    within 'ol#peeps' do
+    within 'ul#peeps' do
       expect(page).to have_content('This is a peep')
     end
   end
@@ -16,7 +16,7 @@ feature "Viewing Peeps" do
 
     visit '/peeps'
 
-    within 'ol#peeps' do
+    within 'ul#peeps' do
       ("Be careful not to choke on your aspirations").should appear_before("Take a seat, young Skywalker")
     end
   end
@@ -26,7 +26,7 @@ feature "Viewing Peeps" do
     post_peep2
     visit '/peeps'
 
-    within 'ol#peeps' do
+    within 'ul#peeps' do
       expect(page).to have_content(Time.now.strftime("%Y-%m-%e %H:%M"))
     end
   end

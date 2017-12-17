@@ -6,11 +6,8 @@ class Peep
   include DataMapper::Resource
 
   property :id, Serial
-  property :content, String
-  property :created_at, String
+  property :content, Text
+  property :created_at, Text
+
 
 end
-
-DataMapper.setup(:default, "postgres://localhost/chitter_#{ENV['RACK_ENV']}")
-DataMapper.finalize
-DataMapper.auto_upgrade!
