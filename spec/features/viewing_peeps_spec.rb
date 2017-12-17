@@ -20,4 +20,14 @@ feature "Viewing Peeps" do
       ("Be careful not to choke on your aspirations").should appear_before("Take a seat, young Skywalker")
     end
   end
+
+  scenario "User can see time when a peep was posted" do
+    post_peep1
+    post_peep2
+    visit '/peeps'
+
+    within 'ol#peeps' do
+      expect(page).to have_content(Time.now.strftime("%Y-%m-%e %H:%M"))
+    end
+  end
 end
