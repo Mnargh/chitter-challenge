@@ -16,5 +16,6 @@ group :test do
   gem 'pry'
   gem 'selenium-webdriver'
   gem 'shotgun'
+  gem 'database_cleaner'
 
 end
