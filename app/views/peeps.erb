@@ -1,5 +1,12 @@
-<ul id='peeps'>
-  <%@peeps.each_with_index do |peep, index|%>
+<html>
+
+<ol id='peeps'>
+  <!-- <%@peeps.each_with_index do |peep, index|%>
     <%=index+1%>: <%=peep.content%>
+  <%end%> -->
+  <%@peeps.each do |peep|%>
+    Content:<%=peep.content%>
   <%end%>
-</ul>
+</ol>
+
+</html>

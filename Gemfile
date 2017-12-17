@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.4.2'
+ruby '2.4.0'
+
+  gem 'sinatra'
+  gem 'data_mapper', '1.2.0'
+  gem 'dm-postgres-adapter'
 
 group :test do
   gem 'cucumber'
@@ -8,11 +12,8 @@ group :test do
   gem 'rubocop'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
-  gem 'data_mapper', '1.2.0'
-  gem 'dm-postgres-adapter'
   gem 'capybara'
   gem 'pry'
-  gem 'sinatra'
   gem 'selenium-webdriver'
   gem 'shotgun'
 

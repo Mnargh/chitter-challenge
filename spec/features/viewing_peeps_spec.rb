@@ -5,7 +5,7 @@ feature "Viewing Peeps" do
     visit '/peeps'
 
     expect(page.status_code).to eq 200
-    within 'ul#peeps' do
+    within 'ol#peeps' do
       expect(page).to have_content('This is a peep')
     end
   end
