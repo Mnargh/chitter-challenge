@@ -19,10 +19,6 @@ set :session_secret, 'Arbitrary secret name'
     redirect to('/peeps')
   end
 
-  get '/peeps/new' do
-    erb(:add_peep)
-  end
-
   get '/users/new' do
     erb(:sign_up)
   end

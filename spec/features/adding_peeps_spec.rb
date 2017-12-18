@@ -1,7 +1,7 @@
 feature 'Posting new peeps' do
 
   scenario 'Peeps can be created and posted' do
-    visit '/peeps/new'
+    visit '/peeps'
     fill_in :content, with: 'You underestimate my power!'
     click_on 'Post Peep'
 
