@@ -17,7 +17,7 @@ feature "Viewing Peeps" do
     visit '/peeps'
 
     within 'ul#peeps' do
-      ("Be careful not to choke on your aspirations").should appear_before("Take a seat, young Skywalker")
+      ("Take a seat, young Skywalker").should appear_before("Be careful not to choke on your aspirations")
     end
   end
 

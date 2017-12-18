@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Welcome to the mememiverse!</title>
+  </head>
+  <body>
+    <% if current_user %>
+        Welcome <%= current_user.email %>!
+        <% end %>
+    <%= yield %>
+    <!-- yields to the view which has been called by the controller -->
+  </body>
+</html>

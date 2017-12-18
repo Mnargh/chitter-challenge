@@ -1,10 +1,7 @@
 <html>
-<h1> Welcome to the mememiverse!</h1>
 
 <ul id='peeps'>
-  <!-- <%@peeps.each_with_index do |peep, index|%>
-    <%=index+1%>: <%=peep.content%>
-  <%end%> -->
+
   <%@peeps.reverse.each do |peep|%>
     <li>
       <%=peep.content%> created at <%=peep.created_at%>

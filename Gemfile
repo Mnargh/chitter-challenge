@@ -18,5 +18,6 @@ group :test do
   gem 'shotgun'
   gem 'database_cleaner'
   gem 'orderly'
+  gem 'bcrypt'
 
 end
